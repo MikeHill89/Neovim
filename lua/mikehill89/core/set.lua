@@ -25,8 +25,9 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
-
-vim.opt.colorcolumn = "80"
+vim.cmd('set cursorcolumn');
+vim.cmd('highlight CursorLine guibg=#2b2b2b guifg=white ctermbg=darkgray ctermfg=white')
+vim.cmd('set cursorline')
 
 vim.g.mapleader = " "
 vim.opt.textwidth = 80
